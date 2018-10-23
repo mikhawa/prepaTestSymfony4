@@ -625,5 +625,13 @@ with response:
 
 > nullable yes
 
+### 42 make migration
 
+!!! Change your relation ManyToMany into Articles and Sections if isset an error of duplicate "sections_has_articles", and rechange after that.
+
+in console:
+> php bin/console make:migration
+
+real migration to DB:
+>php bin/console doctrine:migrations:migrate
                 
