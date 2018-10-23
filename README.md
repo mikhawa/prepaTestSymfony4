@@ -634,4 +634,23 @@ in console:
 
 real migration to DB:
 >php bin/console doctrine:migrations:migrate
-                
+
+### 43 create Form
+in console:
+>  php bin/console make:form
+
+> Product
+
+> Product     
+
+open src/Form/ProductType.php and update:
+> use Symfony\Component\Form\Extension\Core\Type\FileType;
+
+change
+> ->add('brochure')
+
+to
+>  ->add('brochure', FileType::class, array('label' => 'Brochure (PDF file)'))
+
+
+         
