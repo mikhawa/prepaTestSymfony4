@@ -606,3 +606,24 @@ with
         encoders:
             Symfony\Component\Security\Core\User\User:
                 algorithm: bcrypt
+                
+### 40 How to Upload Files
+ https://symfony.com/doc/current/controller/upload_file.html
+### 41 Create Product Entity
+ 
+console:
+> php bin/console make:entity
+
+with response:
+> Product
+
+> brochure
+
+> string
+
+> 300
+
+> nullable yes
+
+
+                
